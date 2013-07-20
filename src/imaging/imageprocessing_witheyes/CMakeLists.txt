@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( imageprocessing_witheyes )
+find_package( OpenCV REQUIRED )
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../../../bin)
+add_executable( imageprocessing_witheyes imageprocessing_witheyes.cpp )
+target_link_libraries( imageprocessing_witheyes ${OpenCV_LIBS} )
