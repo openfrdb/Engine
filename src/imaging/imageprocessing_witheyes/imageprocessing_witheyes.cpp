@@ -22,7 +22,6 @@
 #include "opencv2/objdetect/objdetect.hpp"
 
 #include <iostream>
-//#include <fstream>
 #include <sstream>
 
 using namespace cv;
