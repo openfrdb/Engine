@@ -2,6 +2,10 @@
  * Copyright (c) 2013. David Thomson jdavidthomson<at>hotmail<dot>com
  * Released to public domain under terms of the BSD Simplified license.
  *
+ * Some code borrowed from Philipp Wagner bytefish<AT<gmx<DOT>de
+ * 
+ * Some code borrowed from samples in the OpenCV Documentation
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *   * Redistributions of source code must retain the above copyright
