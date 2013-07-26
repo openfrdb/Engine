@@ -57,13 +57,12 @@ int main(int argc, const char *argv[]) {
         Mat original = imread(inputFile);
 	Mat cropped;
 
-        // Convert the current frame to grayscale:
+        // Convert  to grayscale:
         Mat gray;
         cvtColor(original, gray, CV_BGR2GRAY);
         // Find the faces in the frame:
         vector< Rect > faces;
 	vector< Rect > eyes;
-	vector< Rect > nose;
 
 	//equalize the image historgram
 	equalizeHist( gray,gray );
@@ -84,13 +83,13 @@ int main(int argc, const char *argv[]) {
 
                 cout << "there are: " << eyes.size() << " eyes" << endl;
 
-		for(int j=0;j<eyes.size();j++){
-		
-			Point center( faces[i].x + eyes[j].x + eyes[j].width*0.5, faces[i].y + eyes[j].y + eyes[j].height*0.5 );
-		       	int radius = cvRound( (eyes[j].width + eyes[j].height)*0.25 );
-		       	circle( gray, center, radius, Scalar( 255, 0, 0 ), 4, 8, 0 );
-
-		}			
+//		for(int j=0;j<eyes.size();j++){
+//		
+//			Point center( faces[i].x + eyes[j].x + eyes[j].width*0.5, faces[i].y + eyes[j].y + eyes[j].height*0.5 );
+//		       	int radius = cvRound( (eyes[j].width + eyes[j].height)*0.25 );
+//		       	circle( gray, center, radius, Scalar( 255, 0, 0 ), 4, 8, 0 );
+//
+//		}			
 		
 		if(eyes.size() == 2) {
 			string filename = "face_";
