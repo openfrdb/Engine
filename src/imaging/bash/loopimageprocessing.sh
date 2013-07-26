@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013. David Thomson jdavidthomson<at>hotmail<dot>com
+ * Copyright (c) 2013. David Thomson dave<at>openfrdb<dot>org
  * Released to public domain under terms of the BSD Simplified license.
  *
  * Redistribution and use in source and binary forms, with or without
